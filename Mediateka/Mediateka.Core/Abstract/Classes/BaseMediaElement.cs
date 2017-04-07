@@ -13,10 +13,10 @@ namespace Mediateka.Core.Abstract.Classes
         protected BaseMediaElement(string name, MediaElementProperty property)
         {
             Name = name;
-            ElemetProperty = property;
+            ElementProperty = property;
         }
 
         public string Name { get; }
-        public MediaElementProperty ElemetProperty { get; }
+        public MediaElementProperty ElementProperty { get; }
     }
 }
