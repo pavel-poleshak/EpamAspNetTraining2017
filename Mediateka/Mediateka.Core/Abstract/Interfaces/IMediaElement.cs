@@ -10,5 +10,8 @@ namespace Mediateka.Core.Abstract.Interfaces
     {
         string Name { get; }
         byte Size { get; }
+        string Author { get; }
+        DateTime CreatedDate { get; }
+        string Path { get; }
     }
 }
