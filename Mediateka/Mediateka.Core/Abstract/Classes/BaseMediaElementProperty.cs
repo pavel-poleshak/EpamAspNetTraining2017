@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Mediateka.Core.Abstract.Interfaces;
 
-namespace Mediateka.Core.Concrete
+namespace Mediateka.Core.Abstract.Classes
 {
-    public class MediaElementProperty
+    public abstract class BaseMediaElementProperty : IMediaElementProperty
     {
-        public MediaElementProperty(
+        protected BaseMediaElementProperty(
             string author,
             DateTime createdDate,
             string path,
