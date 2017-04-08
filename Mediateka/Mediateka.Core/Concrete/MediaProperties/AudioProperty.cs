@@ -10,7 +10,7 @@ namespace Mediateka.Core.Concrete.MediaProperties
             string author,
             DateTime createdDate,
             string path,
-            byte size,
+            int size,
             string extension,
             string genre
         )

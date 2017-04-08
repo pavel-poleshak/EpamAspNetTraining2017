@@ -9,7 +9,7 @@ namespace Mediateka.Core.Abstract.Classes
             string author,
             DateTime createdDate,
             string path,
-            byte size,
+            int size,
             string extension)
         {
             Author = author;
@@ -22,7 +22,7 @@ namespace Mediateka.Core.Abstract.Classes
         public string Author { get; }
         public DateTime CreatedDate { get; }
         public string Path { get; }
-        public byte Size { get; }
+        public int Size { get; }
         public string Extension { get; }
     }
 }
