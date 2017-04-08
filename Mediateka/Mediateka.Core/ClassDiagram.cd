@@ -1,10 +1,75 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Interface Name="Mediateka.Core.Abstract.Interfaces.IMediaElement">
-    <Position X="1.75" Y="1.25" Width="1.5" />
+  <Class Name="Mediateka.Core.Concrete.MediaProperties.AudioProperty" BaseTypeListCollapsed="true">
+    <Position X="0.75" Y="3.5" Width="1.75" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAgAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concrete\MediaProperties\AudioProperty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediateka.Core.Concrete.MediaProperties.ImageProperty">
+    <Position X="5.75" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAABAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concrete\MediaProperties\ImageProperty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediateka.Core.Concrete.MediaProperties.VideoProperty" BaseTypeListCollapsed="true">
+    <Position X="3.25" Y="3.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Concrete\MediaProperties\VideoProperty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Mediateka.Core.Abstract.Classes.BaseMediaElementProperty">
+    <Position X="4.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAIAgAAAAAAAAAAAAQAAAgAAAAAAAAA=</HashCode>
+      <FileName>Abstract\Classes\BaseMediaElementProperty.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Mediateka.Core.Abstract.Classes.BaseMediaElement" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\Classes\BaseMediaElement.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Mediateka.Core.Concrete.MediaProperties.LinkProperty">
+    <Position X="8.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Concrete\MediaProperties\LinkProperty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Mediateka.Core.Abstract.Interfaces.IHasDuration" Collapsed="true">
+    <Position X="10.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\Interfaces\IHasDuration.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mediateka.Core.Abstract.Interfaces.IMediaElement" Collapsed="true">
+    <Position X="12.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Abstract\Interfaces\IMediaElement.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mediateka.Core.Abstract.Interfaces.IMediaElementProperty" Collapsed="true">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAIAgAAAAAAAAAAAAQAAAgAAAAAAAAA=</HashCode>
+      <FileName>Abstract\Interfaces\IMediaElementProperty.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Mediateka.Core.Abstract.Interfaces.IPlayable" Collapsed="true">
+    <Position X="12.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Abstract\Interfaces\IPlayable.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
