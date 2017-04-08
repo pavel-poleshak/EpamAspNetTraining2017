@@ -40,14 +40,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\MediaProperties\AudioProperty.cs" />
+    <Compile Include="Abstract\Classes\BaseMediaElement.cs" />
+    <Compile Include="Concrete\MediaProperties\ImageProperty.cs" />
+    <Compile Include="Abstract\Interfaces\IHasDuration.cs" />
     <Compile Include="Abstract\Interfaces\IMediaElement.cs" />
+    <Compile Include="Abstract\Interfaces\IPlayable.cs" />
+    <Compile Include="Abstract\Interfaces\IMediaElementProperty.cs" />
+    <Compile Include="Abstract\Classes\BaseMediaElementProperty.cs" />
+    <Compile Include="Concrete\MediaProperties\VideoProperty.cs" />
+    <Compile Include="Concrete\MediaProperties\LinkProperty.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Abstract\Classes\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
