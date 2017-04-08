@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Concrete\MediaElements\AudioElement.cs" />
     <Compile Include="Concrete\MediaProperties\AudioProperty.cs" />
     <Compile Include="Abstract\Classes\BaseMediaElement.cs" />
     <Compile Include="Concrete\MediaProperties\ImageProperty.cs" />
