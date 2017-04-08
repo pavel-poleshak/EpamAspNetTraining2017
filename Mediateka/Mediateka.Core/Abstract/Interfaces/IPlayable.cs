@@ -8,6 +8,6 @@ namespace Mediateka.Core.Abstract.Interfaces
 {
     public interface IPlayable
     {
-        void Play();
+        string Play();
     }
 }
