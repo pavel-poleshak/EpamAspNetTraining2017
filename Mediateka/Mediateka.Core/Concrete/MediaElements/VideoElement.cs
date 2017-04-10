@@ -9,15 +9,18 @@ using Mediateka.Core.Concrete.MediaProperties;
 
 namespace Mediateka.Core.Concrete.MediaElements
 {
-    public class VideoElement:BaseMediaElement, IHasDuration, IPlayable
+    public class VideoElement : BaseMediaElement, IHasDuration, IPlayable
     {
-        public VideoElement(string name, VideoProperty property, TimeSpan duration) 
-            : base(name, property)
+        public VideoElement(string name, string extension, string path, VideoProperty property, TimeSpan duration)
+            : base(name, extension, path)
         {
+            Property = property;
             Duration = duration;
         }
 
+        public VideoProperty Property { get; }
         public TimeSpan Duration { get; }
+
         public string Play()
         {
             return string.Format("Playing Video File: {0}", Name);

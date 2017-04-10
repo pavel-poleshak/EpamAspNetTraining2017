@@ -15,7 +15,7 @@ namespace Mediateka.Core.Concrete.MediaProperties
             int width,
             int height
         )
-            : base(author, createdDate, path, size, extension)
+            : base(author, createdDate, size)
         {
             Width = width;
             Height = height;

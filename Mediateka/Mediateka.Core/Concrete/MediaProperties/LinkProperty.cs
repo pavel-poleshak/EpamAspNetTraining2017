@@ -15,7 +15,7 @@ namespace Mediateka.Core.Concrete.MediaProperties
             string extension,
             IMediaElement linkedObject
         )
-            : base(author, createdDate, path, size, extension)
+            : base(author, createdDate, size)
         {
             Object = linkedObject;
         }

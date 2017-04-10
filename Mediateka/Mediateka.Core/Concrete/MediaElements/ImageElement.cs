@@ -9,15 +9,18 @@ using Mediateka.Core.Concrete.MediaProperties;
 
 namespace Mediateka.Core.Concrete.MediaElements
 {
-    public class ImageElement:BaseMediaElement, IShowable
+    public class ImageElement : BaseMediaElement, IShowable
     {
-        public ImageElement(string name, ImageProperty property) : base(name, property)
+        public ImageElement(string name, string extension, string path, ImageProperty property) : base(name, extension, path)
         {
+            Property = property;
         }
+
+        public ImageProperty Property { get; }
 
         public string Show()
         {
-            return string.Format("Showing the image: {0}", Name);
+            return string.Format("Showing Image: {0}", Name);
         }
     }
 }

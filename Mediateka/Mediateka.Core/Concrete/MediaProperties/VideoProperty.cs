@@ -14,7 +14,7 @@ namespace Mediateka.Core.Concrete.MediaProperties
             string extension,
             int fps
         )
-            : base(author, createdDate, path, size, extension)
+            : base(author, createdDate, size)
         {
             Fps = fps;
         }

@@ -10,6 +10,9 @@ namespace Mediateka.Core.Abstract.Interfaces
     public interface IMediaElement
     {
         string Name { get; }
-        BaseMediaElementProperty ElementProperty { get; }
+        string Extension { get; }
+        string Path { get; }
+
+        string GetFullPath();
     }
 }

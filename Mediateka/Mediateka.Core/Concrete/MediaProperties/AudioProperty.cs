@@ -14,7 +14,7 @@ namespace Mediateka.Core.Concrete.MediaProperties
             string extension,
             string genre
         )
-            : base(author, createdDate, path, size, extension)
+            : base(author, createdDate, size)
         {
             Genre = genre;
         }
