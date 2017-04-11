@@ -8,6 +8,5 @@ namespace Mediateka.Core.Abstract.Interfaces
 {
     public interface ILink
     {
-        string Open();
     }
 }

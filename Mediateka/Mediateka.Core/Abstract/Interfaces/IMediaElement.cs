@@ -7,12 +7,7 @@ using Mediateka.Core.Abstract.Classes;
 
 namespace Mediateka.Core.Abstract.Interfaces
 {
-    public interface IMediaElement
+    public interface IMediaElement : INamed, IPlayable
     {
-        string Name { get; }
-        string Extension { get; }
-        string Path { get; }
-
-        string GetFullPath();
     }
 }

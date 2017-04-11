@@ -9,7 +9,7 @@ using Mediateka.Core.Concrete.MediaProperties;
 
 namespace Mediateka.Core.Concrete.MediaElements
 {
-    public class AudioElement:BaseMediaElement, IHasDuration, IPlayable
+    public class AudioElement : LocalizedMediaElement, IDurationable, ILocalizable
     {
         public AudioElement(string name, string extension, string path, AudioProperty property, TimeSpan duration)
             : base(name, extension, path)
@@ -23,7 +23,10 @@ namespace Mediateka.Core.Concrete.MediaElements
 
         public string Play()
         {
-            return string.Format("Playing Audio Track: {0}", Name);
+            return $"Playing Audio Track: {Name}";
         }
+
+
+        public string GetFullPath() => Path+Name+Extension;
     }
 }

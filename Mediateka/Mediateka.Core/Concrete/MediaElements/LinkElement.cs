@@ -9,7 +9,7 @@ using Mediateka.Core.Concrete.MediaProperties;
 
 namespace Mediateka.Core.Concrete.MediaElements
 {
-    public class LinkElement : BaseMediaElement, ILink
+    public class LinkElement : LocalizedMediaElement, IMediaElement, ILink, ILocalizable
     {
         public LinkElement(string name, string extension, string path, LinkProperty property) : base(name, extension, path)
         {
@@ -18,9 +18,17 @@ namespace Mediateka.Core.Concrete.MediaElements
 
         public LinkProperty Property { get; }
 
-        public string Open()
+
+        public string Play()
         {
-            return string.Format("Opening File: {0}", Property.Object.GetFullPath());
+            return string.Format("Opening File: {0}", Property.Object.Name);
         }
+
+        public string GetFullPath()
+        {
+            return Path + Name + Extension;
+        }
+
+       
     }
 }

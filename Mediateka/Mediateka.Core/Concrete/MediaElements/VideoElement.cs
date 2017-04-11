@@ -9,7 +9,7 @@ using Mediateka.Core.Concrete.MediaProperties;
 
 namespace Mediateka.Core.Concrete.MediaElements
 {
-    public class VideoElement : BaseMediaElement, IHasDuration, IPlayable
+    public class VideoElement : LocalizedMediaElement, IMediaElement, ILocalizable, IDurationable
     {
         public VideoElement(string name, string extension, string path, VideoProperty property, TimeSpan duration)
             : base(name, extension, path)
@@ -24,6 +24,10 @@ namespace Mediateka.Core.Concrete.MediaElements
         public string Play()
         {
             return string.Format("Playing Video File: {0}", Name);
+        }
+        public string GetFullPath()
+        {
+            return Path + Name + Extension;
         }
     }
 }

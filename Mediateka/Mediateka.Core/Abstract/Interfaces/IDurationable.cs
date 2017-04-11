@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Mediateka.Core.Abstract.Interfaces
 {
-    public interface IHasDuration
+    public interface IDurationable
     {
         TimeSpan Duration { get; }
     }
