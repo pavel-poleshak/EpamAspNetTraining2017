@@ -47,8 +47,8 @@
     <Compile Include="Abstract\Interfaces\IMediateka.cs" />
     <Compile Include="Abstract\Interfaces\IPlayer.cs" />
     <Compile Include="Concrete\MediaElements\AudioElement.cs" />
-    <Compile Include="Concrete\MediaElements\Event.cs" />
     <Compile Include="Abstract\Interfaces\ILocalizable.cs" />
+    <Compile Include="Concrete\MediaElements\Event.cs" />
     <Compile Include="Concrete\MediaElements\ImageElement.cs" />
     <Compile Include="Concrete\MediaElements\LinkElement.cs" />
     <Compile Include="Concrete\MediaElements\VideoElement.cs" />
