@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TaxiStation.Core.MetaData;
+using TaxiStation.Core.Transport.Components.Engine.Abstract.Property;
 
 namespace TaxiStation.Core.Transport.Components.Engine.Abstract
 {
