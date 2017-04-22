@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace TaxiStation.Core.MetaInfo.Model
+﻿namespace TaxiStation.Core.MetaData
 {
     public class Model
     {
