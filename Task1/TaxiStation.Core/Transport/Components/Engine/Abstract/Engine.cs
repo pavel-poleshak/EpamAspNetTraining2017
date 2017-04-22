@@ -20,5 +20,8 @@ namespace TaxiStation.Core.Transport.Components.Engine.Abstract
         public int EngineId { get; }
         public MetaInfo MetaInfo { get; }
         public EngineProperty EngineProperty { get; }
+
+        public abstract string Work();
+
     }
 }
