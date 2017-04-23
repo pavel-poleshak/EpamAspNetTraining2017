@@ -1,4 +1,4 @@
-﻿namespace TaxiStation.Core.Transport.Components.Engine.Abstract.Property
+﻿namespace TaxiStation.Core.Transport.Components.EngineModel.Abstract.Property
 {
     public abstract class EngineProperty
     {

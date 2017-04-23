@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TaxiStation.Core.MetaData;
-using TaxiStation.Core.Transport.Components.Engine.Abstract;
-using TaxiStation.Core.Transport.Components.Engine.Abstract.Property;
+﻿using TaxiStation.Core.MetaData;
+using TaxiStation.Core.Transport.Components.EngineModel.Abstract;
+using TaxiStation.Core.Transport.Components.EngineModel.Abstract.Property;
 
-namespace TaxiStation.Core.Transport.Components.Engine.Concrete
+namespace TaxiStation.Core.Transport.Components.EngineModel.Concrete
 {
     public class GasolineEngine : CombustionEngine
     {

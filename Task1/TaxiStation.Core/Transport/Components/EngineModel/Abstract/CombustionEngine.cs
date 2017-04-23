@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TaxiStation.Core.MetaData;
-using TaxiStation.Core.Transport.Components.Engine.Abstract.Property;
+﻿using TaxiStation.Core.MetaData;
+using TaxiStation.Core.Transport.Components.EngineModel.Abstract.Property;
 
-namespace TaxiStation.Core.Transport.Components.Engine.Abstract
+namespace TaxiStation.Core.Transport.Components.EngineModel.Abstract
 {
     public abstract class CombustionEngine : Engine
     {

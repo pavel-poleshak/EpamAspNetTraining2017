@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TaxiStation.Core.Transport.Components.Engine.Abstract.Property;
+﻿using TaxiStation.Core.Transport.Components.EngineModel.Abstract.Property;
 
-namespace TaxiStation.Core.Transport.Components.Engine.Concrete.Properties
+namespace TaxiStation.Core.Transport.Components.EngineModel.Concrete.Properties
 {
     public class ElectricEngineProperty:EngineProperty
     {
