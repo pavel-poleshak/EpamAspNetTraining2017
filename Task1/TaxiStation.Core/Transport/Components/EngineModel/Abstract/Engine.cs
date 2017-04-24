@@ -17,6 +17,5 @@ namespace TaxiStation.Core.Transport.Components.EngineModel.Abstract
         public EngineProperty EngineProperty { get; }
 
         public abstract string Work();
-
     }
 }
