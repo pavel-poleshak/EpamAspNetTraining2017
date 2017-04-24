@@ -6,5 +6,7 @@ namespace TaxiStation.Core.Transport.Components.BodyModel.Abstract
     {
         int BodyId { get; }
         MetaInfo MetaInfo { get; }
+        IBodyType BodyType { get; }
+        IBodyClass BodyClass { get; }
     }
 }
