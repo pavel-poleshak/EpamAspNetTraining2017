@@ -8,9 +8,9 @@ using TaxiStation.Core.Transport.Components.BodyModel.Abstract;
 
 namespace TaxiStation.Core.Transport.Components.BodyModel.Concrete
 {
-    public class FramedBody : Body
+    public class FramedBody : BodyType
     {
-        public FramedBody(int bodyId, MetaInfo metaInfo) : base(bodyId, metaInfo)
+        public FramedBody(int bodyTypeId) : base(bodyTypeId)
         {
         }
     }
