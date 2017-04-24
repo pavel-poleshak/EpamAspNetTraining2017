@@ -3,9 +3,9 @@ using TaxiStation.Core.Transport.Components.BodyModel.Abstract;
 
 namespace TaxiStation.Core.Transport.Components.BodyModel.Concrete
 {
-    public class ChassisBody : Body
+    public class ChassisBody : BodyType
     {
-        public ChassisBody(int bodyId, MetaInfo metaInfo) : base(bodyId, metaInfo)
+        protected ChassisBody(int bodyTypeId) : base(bodyTypeId)
         {
         }
     }
