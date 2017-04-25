@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TaxiStation.Core.Transport.Abstract.CarModel
 {
-    public interface IPassengerCar : ITransport
+    public interface IPassengerCar : ICar
     {
         int CountOfSeat { get; }
     }
