@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="TaxiStation.Core.MetaData.Manufacturer" Collapsed="true">
+    <Position X="18" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAMAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MetaData\Manufacturer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.MetaData.MetaInfo" Collapsed="true">
+    <Position X="19.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAQAAABAAAAAAAAAAAAAAAAAAAAgAAAAAAAE=</HashCode>
+      <FileName>MetaData\MetaInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.MetaData.Model" Collapsed="true">
+    <Position X="16.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAIQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MetaData\Model.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.BodyModel.Abstract.Body" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Transport\Components\BodyModel\Abstract\Body.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.BodyModel.Concrete.ChassisBody">
+    <Position X="10.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\BodyModel\Concrete\ChassisBody.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.BodyModel.Concrete.FramedBody">
+    <Position X="12.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\BodyModel\Concrete\FramedBody.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.EngineModel.Abstract.CombustionEngine">
+    <Position X="11.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\EngineModel\Abstract\CombustionEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.EngineModel.Abstract.Engine">
+    <Position X="11.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAgAAA=</HashCode>
+      <FileName>Transport\Components\EngineModel\Abstract\Engine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.EngineModel.Abstract.Property.EngineProperty">
+    <Position X="12.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAACAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\EngineModel\Abstract\Property\EngineProperty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.EngineModel.Concrete.GasolineEngine">
+    <Position X="11.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\EngineModel\Concrete\GasolineEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.EngineModel.Concrete.Properties.CombustionEngineProperty">
+    <Position X="11.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\EngineModel\Concrete\Properties\CombustionEngineProperty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.EngineModel.Concrete.Properties.ElectricEngineProperty">
+    <Position X="13.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\EngineModel\Concrete\Properties\ElectricEngineProperty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.TransmissionModel.Abstract.Transmission">
+    <Position X="1.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAgAAA=</HashCode>
+      <FileName>Transport\Components\TransmissionModel\Abstract\Transmission.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.TransmissionModel.Concrete.ManualTransmission">
+    <Position X="0.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\TransmissionModel\Concrete\ManualTransmission.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.TransmissionModel.Concrete.AutomaticTransmission">
+    <Position X="2.75" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\TransmissionModel\Concrete\AutomaticTransmission.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.BodyModel.Abstract.BodyClass" BaseTypeListCollapsed="true">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Transport\Components\BodyModel\Abstract\BodyClass.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.BodyModel.Abstract.BodyType" BaseTypeListCollapsed="true">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\BodyModel\Abstract\BodyType.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.BodyModel.Concrete.Sedan">
+    <Position X="0.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\BodyModel\Concrete\Sedan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.BodyModel.Concrete.Hatchback">
+    <Position X="3" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\BodyModel\Concrete\Hatchback.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.BodyModel.Concrete.Crossover">
+    <Position X="5.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\BodyModel\Concrete\Crossover.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.WheelModel.RimModel.Abstract.Rim">
+    <Position X="7.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAQAgAAA=</HashCode>
+      <FileName>Transport\Components\WheelModel\RimModel\Abstract\Rim.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.WheelModel.RimModel.Concrete.ForgedDisc">
+    <Position X="6.5" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\WheelModel\RimModel\Concrete\ForgedDisc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.WheelModel.RimModel.Concrete.AlloyDisc">
+    <Position X="8.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\WheelModel\RimModel\Concrete\AlloyDisc.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.WheelModel.TyreModel.Abstract.Tyre">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAQAgAAA=</HashCode>
+      <FileName>Transport\Components\WheelModel\TyreModel\Abstract\Tyre.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.WheelModel.TyreModel.Concrete.AllSeasonTyre">
+    <Position X="6.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\WheelModel\TyreModel\Concrete\AllSeasonTyre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Components.WheelModel.TyreModel.Concrete.WinterTyre">
+    <Position X="8.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\WheelModel\TyreModel\Concrete\WinterTyre.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Abstract.BaseTransport" BaseTypeListCollapsed="true">
+    <Position X="3.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Transport\Abstract\BaseTransport.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.Abstract.CarModel.Car">
+    <Position X="3.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Transport\Abstract\CarModel\Car.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TaxiStation.Core.Transport.PassengerCar">
+    <Position X="3.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\PassengerCar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Struct Name="TaxiStation.Core.Transport.Components.WheelModel.RimModel.RimProperty" Collapsed="true">
+    <Position X="16.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAEAAAEAAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>Transport\Components\WheelModel\RimModel\RimProperty.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="TaxiStation.Core.Transport.Components.WheelModel.TyreModel.TyreProperty" Collapsed="true">
+    <Position X="18" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAABAAAAAAAAAAAAMAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Transport\Components\WheelModel\TyreModel\TyreProperty.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="TaxiStation.Core.Transport.Components.BodyModel.Abstract.IBody" Collapsed="true">
+    <Position X="16.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAIIAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Transport\Components\BodyModel\Abstract\IBody.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TaxiStation.Core.Transport.Components.EngineModel.Abstract.IEngine" Collapsed="true">
+    <Position X="16.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAgAAA=</HashCode>
+      <FileName>Transport\Components\EngineModel\Abstract\IEngine.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TaxiStation.Core.Transport.Components.TransmissionModel.Abstract.ITransmission" Collapsed="true">
+    <Position X="19.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAgAAA=</HashCode>
+      <FileName>Transport\Components\TransmissionModel\Abstract\ITransmission.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TaxiStation.Core.Transport.Components.BodyModel.Abstract.IBodyClass" Collapsed="true">
+    <Position X="18" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAA=</HashCode>
+      <FileName>Transport\Components\BodyModel\Abstract\IBodyClass.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TaxiStation.Core.Transport.Components.BodyModel.Abstract.IBodyType" Collapsed="true">
+    <Position X="19.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\BodyModel\Abstract\IBodyType.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TaxiStation.Core.Transport.Components.WheelModel.Abstract.IWheel" Collapsed="true">
+    <Position X="18" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAIAAAAAAAAAAABAQAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\WheelModel\Abstract\IWheel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TaxiStation.Core.Transport.Components.WheelModel.RimModel.Abstract.IRim" Collapsed="true">
+    <Position X="18" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAQAgAAA=</HashCode>
+      <FileName>Transport\Components\WheelModel\RimModel\Abstract\IRim.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TaxiStation.Core.Transport.Components.WheelModel.TyreModel.Abstract.ITyre" Collapsed="true">
+    <Position X="16.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAQAgAAA=</HashCode>
+      <FileName>Transport\Components\WheelModel\TyreModel\Abstract\ITyre.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TaxiStation.Core.Transport.Abstract.CarModel.IPassengerCar" Collapsed="true">
+    <Position X="0.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Abstract\CarModel\IPassengerCar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TaxiStation.Core.Transport.Abstract.CarModel.ICar" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Transport\Abstract\CarModel\ICar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TaxiStation.Core.Transport.Abstract.ITransport" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Transport\Abstract\ITransport.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TaxiStation.Core.Transport.Components.EngineModel.EngineMaterial" Collapsed="true">
+    <Position X="16.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAABAAAAAAAAAAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Transport\Components\EngineModel\EngineMaterial.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
