@@ -4,17 +4,20 @@ namespace TaxiStation.Core.MetaData
 {
     public class MetaInfo
     {
-        public MetaInfo(Manufacturer manufacturer, Model model, DateTime creatingDate, int weight)
+        public MetaInfo(Manufacturer manufacturer, Model model, DateTime creatingDate, Specification specification,
+            decimal price)
         {
             Manufacturer = manufacturer;
             Model = model;
             CreatingDate = creatingDate;
-            Weight = weight;
+            Specification = specification;
+            Price = price;
         }
 
         public Manufacturer Manufacturer { get; private set; }
         public Model Model { get; private set; }
         public DateTime CreatingDate { get; private set; }
-        public int Weight { get; private set; }
+        public Specification Specification { get; private set; }
+        public decimal Price { get; private set; }
     }
 }
