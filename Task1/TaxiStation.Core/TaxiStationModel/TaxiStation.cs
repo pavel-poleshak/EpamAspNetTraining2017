@@ -7,11 +7,11 @@ using TaxiStation.Core.Transport.Abstract;
 
 namespace TaxiStation.Core.TaxiStationModel
 {
-    public abstract class TaxiStation<T> where T: ITransport
+    public class TaxiStation<T> where T: ITransport
     {
         private ICollection<T> _transport;
 
-        protected TaxiStation(int taxiStationId, string name, ICollection<T> transport)
+        public TaxiStation(int taxiStationId, string name, ICollection<T> transport)
         {
             TaxiStationId = taxiStationId;
             Name = name;
@@ -22,16 +22,16 @@ namespace TaxiStation.Core.TaxiStationModel
         public string Name { get; private set; }
         public int TransportCount => _transport.Count;
 
-        public void Add(T obj)
+        public void AddTransport(T transport)
         {
-            var source = _transport.FirstOrDefault(x => x.TransportId == obj.TransportId);
+            var source = _transport.FirstOrDefault(x => x.TransportId == transport.TransportId);
             if (source==null)
             {
-                _transport.Add(obj);
+                _transport.Add(transport);
             }
         }
 
-        public T Get(int transportId) => _transport.FirstOrDefault(x => x.TransportId==transportId);
+        public T GetTransport(int transportId) => _transport.FirstOrDefault(x => x.TransportId==transportId);
 
         public IEnumerable<T> GetAllTransport()
         {
@@ -48,30 +48,46 @@ namespace TaxiStation.Core.TaxiStationModel
             return source;
         }
 
-        public T Remove(T obj)
+        public T Remove(T transport)
         {
-            T source = _transport.FirstOrDefault(x=>x.Equals(obj));
+            T source = _transport.FirstOrDefault(x=>x.Equals(transport));
             if (source != null)
             {
-                _transport.Remove(obj);
+                _transport.Remove(transport);
             }
-            return obj;
+            return transport;
         }
 
-        public virtual decimal GetTotalPrice()
+        public decimal GetTotalPrice()
         {
             return _transport.Sum(x => x.MetaInfo.Price);
         }
 
-        public abstract IEnumerable<T> FindBySpeed (double min, double max);
+        public IEnumerable<T> FindTransportBy(Predicate<T> projector)
+        {
+            var source = from transport in _transport
+                where projector(transport)
+                select transport;
+            return source;
+        }
 
-        public abstract IEnumerable<T> SortTransportByFuelConsumption();
+        public IEnumerable<T> SortTransportBy(Predicate<T> projector)
+        {
+            var source = from transport in _transport
+                orderby projector
+                select transport;
+            return source;
+        }
 
-        public abstract IEnumerable<T> SortTransportByFuelConsumptionDesceding();
+        public IEnumerable<T> SortTransportDescedingBy(Predicate<T> projector)
+        {
+            var source = from transport in _transport
+                orderby projector descending 
+                select transport;
+            return source;
+        }
 
-
-
-        public virtual string GetInfo()
+        public string GetInfo()
         {
             return string.Format("Id: {0} \tName: {1} \tTransport Count: {2}", TaxiStationId, Name, TransportCount);
         }
