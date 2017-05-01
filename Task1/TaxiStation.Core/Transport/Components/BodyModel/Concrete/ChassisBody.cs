@@ -5,7 +5,7 @@ namespace TaxiStation.Core.Transport.Components.BodyModel.Concrete
 {
     public class ChassisBody : BodyType
     {
-        protected ChassisBody(int bodyTypeId) : base(bodyTypeId)
+        public ChassisBody(int bodyTypeId) : base(bodyTypeId)
         {
         }
     }

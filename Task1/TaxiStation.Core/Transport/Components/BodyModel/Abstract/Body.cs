@@ -4,7 +4,7 @@ namespace TaxiStation.Core.Transport.Components.BodyModel.Abstract
 {
     public class Body : IBody
     {
-        protected Body(int bodyId, MetaInfo metaInfo, IBodyType bodyType, IBodyClass bodyClass)
+        public Body(int bodyId, MetaInfo metaInfo, IBodyType bodyType, IBodyClass bodyClass)
         {
             BodyId = bodyId;
             MetaInfo = metaInfo;
