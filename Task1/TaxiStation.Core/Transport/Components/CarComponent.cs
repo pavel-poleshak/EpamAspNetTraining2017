@@ -12,9 +12,17 @@ namespace TaxiStation.Core.Transport.Components
 {
     public class CarComponent
     {
-        IBody Body { get; }
-        IEngine Engine { get; }
-        ITransmission Transmission { get; }
-        ICollection<IWheel> Wheels { get; }
+        public CarComponent(IBody body, IEngine engine, ITransmission transmission, ICollection<IWheel> wheels)
+        {
+            Body = body;
+            Engine = engine;
+            Transmission = transmission;
+            Wheels = wheels;
+        }
+
+        public IBody Body { get; private set; }
+        public IEngine Engine { get; private set; }
+        public ITransmission Transmission { get; private set; }
+        public ICollection<IWheel> Wheels { get; private set; }
     }
 }
