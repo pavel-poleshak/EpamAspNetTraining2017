@@ -46,13 +46,14 @@
     <Compile Include="MetaData\Model.cs" />
     <Compile Include="MetaData\Specification.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TaxiStationModel\PassengerTaxiStation.cs" />
     <Compile Include="TaxiStationModel\TaxiStation.cs" />
     <Compile Include="Transport\Abstract\BaseTransport.cs" />
     <Compile Include="Transport\Abstract\CarModel\Car.cs" />
     <Compile Include="Transport\Abstract\CarModel\ICar.cs" />
     <Compile Include="Transport\Abstract\CarModel\IPassengerCar.cs" />
     <Compile Include="Transport\Components\CarComponent.cs" />
+    <Compile Include="Transport\Components\IComponent.cs" />
+    <Compile Include="Transport\Components\WheelModel\Concrete\Wheel.cs" />
     <Compile Include="Transport\PassengerCar.cs" />
     <Compile Include="Transport\Abstract\ITransport.cs" />
     <Compile Include="Transport\Components\BodyModel\Abstract\Body.cs" />
@@ -90,9 +91,7 @@
     <Compile Include="Transport\Components\WheelModel\TyreModel\Concrete\WinterTyre.cs" />
     <Compile Include="Transport\Components\WheelModel\TyreModel\TyreProperty.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Transport\Components\WheelModel\Concrete\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
   </ItemGroup>

@@ -14,12 +14,17 @@ namespace TaxiStation.Core.Transport.Abstract.CarModel
 {
     public abstract class Car : BaseTransport, ICar
     {
-        protected Car(int transportId, MetaInfo metaInfo, CarComponent component) 
+        protected Car(int transportId, MetaInfo metaInfo, Specification specification, ICollection<IComponent> components) 
             : base(transportId, metaInfo)
         {
-            Component = component;
+            Specification = specification;
+            Components = components;
         }
 
-        public CarComponent Component { get; }
+        public Specification Specification { get; private set; }
+        public ICollection<IComponent> Components { get; private set; }
+
+        public abstract string Move();
+        public abstract string EnableDayLight();
     }
 }

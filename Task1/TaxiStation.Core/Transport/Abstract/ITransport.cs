@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TaxiStation.Core.MetaData;
+using TaxiStation.Core.Transport.Components;
 
 namespace TaxiStation.Core.Transport.Abstract
 {
@@ -11,5 +12,8 @@ namespace TaxiStation.Core.Transport.Abstract
     {
         int TransportId { get; }
         MetaInfo MetaInfo { get; }
+        ICollection<IComponent> Components { get; }
+
+        string Move();
     }
 }

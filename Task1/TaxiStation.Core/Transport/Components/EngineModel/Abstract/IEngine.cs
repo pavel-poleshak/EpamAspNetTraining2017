@@ -3,10 +3,9 @@ using TaxiStation.Core.Transport.Components.EngineModel.Abstract.Property;
 
 namespace TaxiStation.Core.Transport.Components.EngineModel.Abstract
 {
-    public interface IEngine
+    public interface IEngine : IComponent
     {
         int EngineId { get; }
-        MetaInfo MetaInfo { get; }
         EngineProperty EngineProperty { get; }
 
         string Work();

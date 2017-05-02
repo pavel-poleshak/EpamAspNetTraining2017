@@ -8,7 +8,7 @@ using TaxiStation.Core.Transport.Components.WheelModel.TyreModel.Abstract;
 
 namespace TaxiStation.Core.Transport.Components.WheelModel.Abstract
 {
-    public interface IWheel
+    public interface IWheel : IComponent
     {
         int WheelId { get; }
         IRim Rim { get; }

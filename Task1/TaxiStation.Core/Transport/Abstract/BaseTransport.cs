@@ -7,7 +7,7 @@ using TaxiStation.Core.MetaData;
 
 namespace TaxiStation.Core.Transport.Abstract
 {
-    public abstract class BaseTransport : ITransport
+    public abstract class BaseTransport
     {
         protected BaseTransport(int transportId, MetaInfo metaInfo)
         {

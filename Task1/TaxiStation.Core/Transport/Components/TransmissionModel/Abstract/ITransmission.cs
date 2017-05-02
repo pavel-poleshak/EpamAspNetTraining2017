@@ -7,10 +7,9 @@ using TaxiStation.Core.MetaData;
 
 namespace TaxiStation.Core.Transport.Components.TransmissionModel.Abstract
 {
-    public interface ITransmission
+    public interface ITransmission : IComponent
     {
         int TransmissionId { get; }
-        MetaInfo MetaInfo { get; }
         int NumberOfGears { get; }
     }
 }

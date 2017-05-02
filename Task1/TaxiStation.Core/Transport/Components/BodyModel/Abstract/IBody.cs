@@ -2,10 +2,9 @@
 
 namespace TaxiStation.Core.Transport.Components.BodyModel.Abstract
 {
-    public interface IBody
+    public interface IBody : IComponent
     {
         int BodyId { get; }
-        MetaInfo MetaInfo { get; }
         IBodyType BodyType { get; }
         IBodyClass BodyClass { get; }
     }
